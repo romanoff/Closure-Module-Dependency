@@ -8,3 +8,7 @@ This simple example shows how to load goog.ui.CustomButton dynamically inside an
 * Go to "http://localhost:8000/main.html" page and click "Click To Load Module" button. "goog.ui.CustomButton" button will appear. In order to see that module has been loaded dynamically you can open "Network" tab in chrome. (70 requests are made on initial load and 23 more requests while loading "Click To Load Module"). Also you can type "goog.ui.CustomButton" in javascript console that will return error on initial load and CustomButton constructor javascript after module has been loaded.
 
 In general I used calcdeps.py to calculate dependencies for app.js (and app_init.js) and detect what dependencies hasn't been loaded that will be required for loaded_module.js.
+
+# 3. Css
+
+Have experimented a little bit with css and added loaded_module_css.js file that is loaded as well with loaded_module. It actually adds all css goog.ui.CustomButton needs dynamically without having to load css files.

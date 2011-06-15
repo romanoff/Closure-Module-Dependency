@@ -1,8 +1,8 @@
 goog.provide('fastmock.app');
 goog.require('goog.events');
 goog.require('goog.dom');
-goog.require('goog.module.ModuleLoader');
-goog.require('goog.module.ModuleManager');
+goog.require('goog.cssom');
+
 
 /**
  * @constructor
